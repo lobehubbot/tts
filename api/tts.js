@@ -12,7 +12,7 @@ function generateUUID() {
 const speechApi = (ssml) => {
     var data = JSON.stringify({
         ssml,
-        ttsAudioFormat: "audio-24khz-160kbitrate-mono-mp3",
+        ttsAudioFormat: 24,
         offsetInPlainText: 0,
         properties: {
             SpeakTriggerSource: "AccTuningPagePlayButton",
